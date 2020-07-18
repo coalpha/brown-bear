@@ -1,2 +1,2 @@
-# brown_bear
+# brown-bear
 

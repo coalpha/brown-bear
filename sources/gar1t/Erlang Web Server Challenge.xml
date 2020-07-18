@@ -1,0 +1,77 @@
+<root>
+   <meta title="Erlang Web Server Challenge"/>
+   <meta tags="erlang,web,server,challenge,static,concurrency"/>
+   <meta disabled="true"/>
+   <sentences>
+      <mayor>
+         I hereby declare a challenge.
+      </mayor>
+      <mayor>
+         It is a most noble contest of agility, speed, wits, and valor. Who dares accept the challenge?
+      </mayor>
+      <mayor>
+         The challenge is to run tests on the most popular erlang web servers to see whose metal is hard and sharp and whose is brittle and weak.
+      </mayor>
+      <mayor>
+         The challenge is to test many web servers.
+      </mayor>
+      <mayor>
+         I'm issuing a challenge to erlang warriors to see who can muster blinding speed and harness the awesome power of massive concurrency.
+      </mayor>
+      <mayor>
+         The rules are as follows: You must test one of the designated servers.
+      </mayor>
+      <mayor>
+         You must serve a static file it must be 100 bytes.
+      </mayor>
+      <mayor>
+         Strictly static.
+      </mayor>
+      <mayor>
+         It must be erlang.
+      </mayor>
+      <mayor>
+         You must read it from disk.
+      </mayor>
+      <mayor>
+         Then you can serve it using whatever devilish alchemy you can devise.
+      </mayor>
+      <mayor>
+         The more arcane and clever, the better.
+      </mayor>
+      <mayor>
+         The challenge is hereby issued: go forth and bring me delightful numbers to tickle my fancy!
+      </mayor>
+      <mayor>
+         I will declare the victor at the end and have the loser beheaded to the jeers of the roaring crowd.
+      </mayor>
+      <mayor link="next">
+         This displeases me.
+      </mayor>
+      <mayor>
+         You are disqualified from the challenge.
+      </mayor>
+      <mayor>
+         I shall post them in the town square for all to see.
+      </mayor>
+      <mayor>
+         The victor will receive a parade in his honor, a seat at my table, and the choice cuts from my prized hog.
+      </mayor>
+      <mayor>
+         Bloodsport, my dear boy: it's how Kings stay in power.
+      </mayor>
+      <mayor>
+         It will be a tournament of epic proportion, my most daunting challenge yet!
+      </mayor>
+   </sentences>
+   <characters>
+      <mayor>
+         <sig type="noun">Erlang Warriors</sig>
+         <sig type="adj">blinding speed</sig>
+         <sig type="noun">The awesome power of massive concurrency</sig>
+         <sig type="adj">arcane and clever</sig>
+         <sig type="sentence">Go forth and bring me delightful numbers to tickle my fancy!</sig>
+         <sig type="sentence">Bloodsport, my dear boy: it's how Kings stay in power.</sig>
+      </mayor>
+   </characters>
+</root>

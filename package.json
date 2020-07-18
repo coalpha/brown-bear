@@ -1,5 +1,4 @@
 {
-   "name": "brown_bear",
    "scripts": {
       "start": "npm run discord:bot",
       "discord:bot": "node discord/bot",

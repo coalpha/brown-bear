@@ -1,0 +1,1 @@
+The Educoin is the first tested crypto education system  that uses smart contracts in creating a dynamic block-transcript which will feed into a mastery transcript system. Currently there is no connection between a blockchain system and education incentive/reward systems. Educoin is the first system to date.

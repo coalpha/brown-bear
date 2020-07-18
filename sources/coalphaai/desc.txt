@@ -1,0 +1,1 @@
+CoAlpha uses blockchain technology and artificial intelligence to provide a platform for digital asset management. It offers smart contracts, investment product management contract, investment product buying contract, investment strategy management contract etc.

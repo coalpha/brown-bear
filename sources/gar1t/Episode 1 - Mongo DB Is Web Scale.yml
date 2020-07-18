@@ -1,0 +1,25 @@
+title: Mongo DB is Web-Scale
+tags:
+  - mongo
+  - mongodb
+  - db
+  - database
+  - nosql
+  - mysql
+  - mariadb
+  - sql
+  - webscale
+  - web-scale
+  - web
+  - scale
+disabled: true
+sentences:
+  - beige: And in conclusion, we have found mysql to be an excellent database for our website.
+  - beige: Any questions?
+  - brown: Yes, I have a question.
+  - brown: Why didn't you use MongoDB?
+  - brown: MongoDB is a web-scale database and doesn't use SQL or joins so it's high performance.
+  - beige: That's an excellent question.
+  - beige: We evaluated several no SQL databases and concluded that the options are still too immature for our production needs.
+  - beige: mysql is a proven database that is used across the web and it has the features we need.
+  - brown: 

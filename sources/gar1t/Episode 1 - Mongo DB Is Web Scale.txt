@@ -1,4 +1,3 @@
-
 Why didn't you use MongoDB?
 MongoDB is a web-scale database and doesn't use SQL or joins so it's high performance.
 But it doesn't scale.

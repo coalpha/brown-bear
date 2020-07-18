@@ -1,6 +1,6 @@
 const Eris = require("eris");
 
-const config = require("./config")
+const config = require("./config");
 
 /** @type {import("eris").Client} */
 const bot = new Eris(config.bot.token);

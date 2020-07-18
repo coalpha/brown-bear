@@ -2,7 +2,7 @@
    <meta title="Erlang Web Server Challenge"/>
    <meta tags="erlang,web,server,challenge,static,concurrency"/>
    <meta disabled="true"/>
-   <sentences>
+   <li id="sentences">
       <mayor>
          I hereby declare a challenge.
       </mayor>
@@ -63,7 +63,7 @@
       <mayor>
          It will be a tournament of epic proportion, my most daunting challenge yet!
       </mayor>
-   </sentences>
+   </li>
    <characters>
       <mayor>
          <sig type="noun">Erlang Warriors</sig>

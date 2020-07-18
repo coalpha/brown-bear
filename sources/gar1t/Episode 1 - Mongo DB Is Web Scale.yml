@@ -22,4 +22,63 @@ sentences:
   - beige: That's an excellent question.
   - beige: We evaluated several no SQL databases and concluded that the options are still too immature for our production needs.
   - beige: mysql is a proven database that is used across the web and it has the features we need.
-  - brown: 
+  - brown: But it doesn't scale.
+  - brown: Everybody knows that relational databases don't scale because they use joins and write to disk.
+  - beige: scalability is a complicated topic and it's hard to make a general statement like that.
+  - brown: Relational databases weren't built for web-scale.
+  - brown: MongoDB handles web-scale; you turn it on and it scales right up.
+  - beige: It may surprise you that there are a handful of high-profile websites still using relational databases and in particular, mysql.
+  - brown: Relational databases have impotence mismatch.
+  - beige: I think you mean impedance.
+  - brown: mysql is slow as a dog.
+  - brown: MongoDB will run circles around mysql because MongoDB is web scale.
+  - beige: MongoDB does have some impressive benchmarks but they do some interesting things to get those numbers.
+  - beige: For example, when you write to MongoDB, you don't actually write anything!
+  - beige: You stage your data to be written at a later time.
+  - beige: If there's a problem writing your data you're fucked.
+  - beige: does that sound like a good design to you?
+  - brown: If that's what they need to do to get those kick-ass benchmarks then it's a great design.
+  - beige: if you are stupid enough to totally ignore durability just to get benchmarks,  I suggest you pipe your data to `/dev/null`.
+  - beige: It will be very fast.
+  - brown: If `/dev/null` is fast and web-scale, I will use it.
+  - brown: Is it web-scale?
+  - beige: You are kidding me right?
+  - beige: I was making a joke.
+  - beige: I mean, if you're happy writing to a database that doesn't give you any idea that your data is actually written just because you want high performance numbers, why not write to `/dev/null`?
+  - beige: It's fast as hell.
+  - brown: Does `/dev/null` support sharding?
+  - beige: Holy shit.
+  - beige: For my own mental health I'm going to assume you're just messing with me and aren't actually retarded.
+  - beige: Do you even know what a shard is?
+  - brown: "Shards are the secret ingredient in the web-scale sauce: they just work"
+  - beige: Please tell me you don't actually make a living in a technology field.
+  - brown: I'm a web programmer.
+  - beige: "..."
+  - beige: As of this moment I officially resign from my job as software engineer and will take up work on a farm shoveling pig shit and administering anal suppositories to sick horses because that will be a thousand times more tolerable than being in the same industry as dipshits like you.
+  - beige: You read the latest post on high-scalability.com and think you're a fucking Google architect and parrot slogans like web scale and charting but you have no idea what the fuck you're talking about.
+  - beige: You're going to blow some project to hell because you get woody playing with software like it's a sex doll.
+  - beige: Relational databases have been around since fucking the 70s and are some of the most mature technology you can find.
+  - beige: Yet somehow everything needs to be reinvented because Google and Amazon post some white papers.
+  - beige: If you need to build a globally distributed search engine that manages petabytes of data fine, build your own database.
+  - beige: But if you're like 99.9% of companies, you can probably get by very well with something like mysql and maybe memcached.
+  - brown: Redis will kick memcache's ass.
+  - brown: It's so fast and scalable.
+  - beige: Right now I'm thinking of how much fun it will be to castrate my first bull down on the farm.
+  - beige: I cannot wait to cut off the testicles of a 3,000 pound Raging Bull as it tries to kick my head in.
+  - brown: MongoDB is a document database that doesn't need joins.
+  - brown: It uses MapReduce.
+  - beige: Now I'm cleaning a cistern of chicken shits but I don't care because I don't have to listen to the NoSQL fan boys reciting the feature list of their favorite schema-free database.
+  - brown: By writing to memory map files, MongoDB can improve its write throughput by a factor of ten.
+  - beige: What the fuck.
+  - beige: Let's abandon transactions consistency durability and pin our mission-critical data to a table and give it a night it will never forget.
+  - beige: I mean, who cares what we store as long as we do it quickly?
+  - beige: Oh. Sorry. That's right.
+  - beige: I'm on the farm now suffocating from the stench of a thousand cow farts but it smells like roses to me because I am nowhere near this moronic conversation.
+  - brown: MongoDB uses atomic modifiers for contention free performance.
+  - beige: Now I've contracted more E. coli from cleaning cow stalls and am bleeding out my asshole.
+  - beige: I'll be dead soon, but that is a welcome relief.
+  - beige: I will never have to witness the collapse of the world economy because NoSQL radicals talked financial institutions into abandoning perfectly good data stores because they didn't support distributed fucking MapReduce.
+  - brown: MongoDB stores files of any size without complicating your stack.
+  - beige: "..."
+  - beige: Thank you for your questions.
+  - beige: This presentation is over and I'm off to the farm to start my new career

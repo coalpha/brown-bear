@@ -1,20 +1,2 @@
-Why didn't you use MongoDB?
-MongoDB is a web-scale database and doesn't use SQL or joins so it's high performance.
-But it doesn't scale.
-Everybody knows that relational databases don't scale because they use joins and write to disk.
-Relational databases weren't built for web-scale.
-MongoDB handles web-scale; you turn it on and it scales right up.
-Relational databases have impotence mismatch.
-mysql is slow as a dog.
-MongoDB will run circles around mysql because MongoDB is web scale.
-If that's what they need to do to get those kick-ass benchmarks then it's a great design.
-If `/dev/null` is fast and web-scale, I will use it.
-Is it web-scale?
-Does `/dev/null` support sharding?
-Shards are the secret ingredient in the web-scale sauce: they just work
-globally distributed search engine that
-Redis will kick memcache's ass. It's so fast and scalable.
-MongoDB is a document database that doesn't need joins. It uses MapReduce.
-By writing to memory map files MongoDB can improve its write throughput by a factor of 10.
-MongoDB uses atomic modifiers for contention free performance.
-MongoDB stores files of any size without complicating your stack.
+
+

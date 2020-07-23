@@ -2,6 +2,7 @@
    "scripts": {
       "start": "npm run discord:bot",
       "dev:pos": "node synthesis/pos",
+      "dev:markov": "node synthesis/markov",
       "discord:bot": "node discord/bot",
       "discord:auth": "node discord/auth"
    },

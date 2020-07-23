@@ -26,7 +26,7 @@ sentences:
   - brown: Simple as that.
   - beige: That may have been true ten years ago.
   - beige: It's not true today.
-  - brown: Node.js will run circles around Apache because Apache was built before a sync was discovered.
+  - brown: Node.js will run circles around Apache because Apache was built before async was discovered.
   - beige: This is where I typically stab myself repeatedly in the ears with a fork until I stop hearing you.
   - beige: I've looked at node it uses a single threaded loop that dispatches events to handlers.
   - beige: It's a proven model that solves some concurrency problems but at the cost of code complexity.

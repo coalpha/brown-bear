@@ -1,0 +1,4 @@
+digraph {
+   message -> 0 [label="is from bot"]
+   update -> 1 [label="is from bot"]
+}

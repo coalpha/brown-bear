@@ -12,7 +12,7 @@ tags:
   - web-scale
   - web
   - scale
-disabled: true
+disabled: false
 sentences:
   - beige: And in conclusion, we have found mysql to be an excellent database for our website.
   - beige: Any questions?
@@ -54,7 +54,7 @@ sentences:
   - beige: Please tell me you don't actually make a living in a technology field.
   - brown: I'm a web programmer.
   - beige: "..."
-  - beige: As of this moment I officially resign from my job as software engineer and will take up work on a farm shoveling pig shit and administering anal suppositories to sick horses because that will be a thousand times more tolerable than being in the same industry as dipshits like you.
+  - beige: As of this moment, I officially resign from my job as software engineer and will take up work on a farm shoveling pig shit and administering anal suppositories to sick horses because that will be a thousand times more tolerable than being in the same industry as dipshits like you.
   - beige: You read the latest post on high-scalability.com and think you're a fucking Google architect and parrot slogans like web scale and charting but you have no idea what the fuck you're talking about.
   - beige: You're going to blow some project to hell because you get woody playing with software like it's a sex doll.
   - beige: Relational databases have been around since fucking the 70s and are some of the most mature technology you can find.

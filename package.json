@@ -1,6 +1,7 @@
 {
    "scripts": {
       "start": "npm run discord:bot",
+      "dev:pos": "node synthesis/pos",
       "discord:bot": "node discord/bot",
       "discord:auth": "node discord/auth"
    },
@@ -10,8 +11,15 @@
       "eris": "^0.13.3",
       "erlpack": "github:abalabahaha/erlpack",
       "open": "^7.0.4",
-      "ramda": "^0.27.0",
-      "xml2js": "^0.4.23",
+      "to-zalgo": "^1.0.1",
+      "wink-pos-tagger": "^2.2.2",
       "zlib-sync": "^0.1.7"
+   },
+   "devDependencies": {
+      "@coalpha/eslint-config": "^1.0.3",
+      "@types/readline-sync": "^1.4.3",
+      "@types/wink-pos-tagger": "^2.2.1",
+      "eslint": "^7.5.0",
+      "readline-sync": "^1.4.10"
    }
 }

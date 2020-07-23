@@ -1,9 +1,6 @@
 const rl = require("readline-sync");
 const posTagger = require("wink-pos-tagger");
 
-/**
- * @type {posTagger}
- */
 const tagger = posTagger();
 rl.promptLoop(inp => {
    const tokens = tagger.tagSentence(inp);

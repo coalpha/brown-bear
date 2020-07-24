@@ -1,5 +1,5 @@
-const rl = require("readline-sync");
-const posTagger = require("wink-pos-tagger");
+import rl = require("readline-sync");
+import posTagger = require("wink-pos-tagger");
 
 const tagger = posTagger();
 rl.promptLoop(inp => {
@@ -7,4 +7,5 @@ rl.promptLoop(inp => {
    console.log(tokens.map(token => `${token.normal}::${token.pos}`).join(" "));
    console.log();
    console.log(tokens.map(token => token.lemma || token.normal).join(" "));
+   return false;
 });

@@ -1,18 +1,15 @@
 {
+   "name": "brown-bear",
    "scripts": {
-      "start": "npm run discord:bot",
-      "dev:pos": "node synthesis/pos",
-      "dev:markov": "node synthesis/markov",
-      "discord:bot": "node discord/bot",
-      "discord:auth": "node discord/auth"
+      "postinstall": "patch-package"
    },
    "dependencies": {
       "@types/node": "^14.0.23",
       "bufferutil": "^4.0.1",
       "eris": "^0.13.3",
       "erlpack": "github:abalabahaha/erlpack",
-      "open": "^7.0.4",
-      "to-zalgo": "^1.0.1",
+      "readline-sync": "^1.4.10",
+      "runes": "^0.4.3",
       "wink-pos-tagger": "^2.2.2",
       "zlib-sync": "^0.1.7"
    },
@@ -21,6 +18,7 @@
       "@types/readline-sync": "^1.4.3",
       "@types/wink-pos-tagger": "^2.2.1",
       "eslint": "^7.5.0",
-      "readline-sync": "^1.4.10"
+      "patch-package": "^6.2.2",
+      "open": "^7.0.4"
    }
 }

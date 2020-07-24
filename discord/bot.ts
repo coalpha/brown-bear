@@ -1,38 +1,29 @@
-const Eris = require("eris");
+import Eris = require("eris");
+import config = require("./config");
 
-const config = require("./config");
+type Message = Eris.Message;
 
-/** @typedef {import("eris").Message} Message */
-
-/** @type {import("eris").Client} */
-const bot = new Eris(config.bot.token);
+const bot = Eris(config.bot.token);
 
 bot.on("ready", () => {
    console.log("I'm a speed junkie...");
    const guilds = bot.guilds.forEach(guild => {
       console.log(guild.name);
    });
-   bot.editStatus("online", { name: "your server messages", type: 3});
+   bot.editStatus("online", { name: "your server messages", type: 3 });
 });
 
-/**
- * @param {Message} msg
- * @returns {boolean}
- */
-function messageIsFromSelf(msg) {
+function messageIsFromSelf(msg: Message) {
    return msg.author.id === config.client.id;
 }
 
 const commandPrefix = "!";
 
-const commands = require("./commands");
+const commands = require("./command");
 
 const messageCauseEffect = {};
 
-/**
- * @param {Message} msg
- */
-async function newHandleMessage(msg) {
+async function newHandleMessage(msg: Message) {
    if (!messageIsFromSelf(msg)) {
       const { content } = msg;
       if (content[0] === commandPrefix) {

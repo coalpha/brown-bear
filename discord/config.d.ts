@@ -1,13 +1,11 @@
-interface IConfig {
+interface config {
    client: {
       id: string,
    },
-
    bot: {
       token: string,
    },
 }
 
-declare const config: IConfig;
-
+declare const config: config;
 export = config;

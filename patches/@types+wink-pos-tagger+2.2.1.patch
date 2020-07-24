@@ -1,0 +1,12 @@
+diff --git a/node_modules/@types/wink-pos-tagger/index.d.ts b/node_modules/@types/wink-pos-tagger/index.d.ts
+index 31957d6..eb04668 100644
+--- a/node_modules/@types/wink-pos-tagger/index.d.ts
++++ b/node_modules/@types/wink-pos-tagger/index.d.ts
+@@ -68,4 +68,6 @@ declare namespace Tagger {
+     }
+ }
+ 
+-export = Tagger;
++declare function constructor(): Tagger;
++
++export = constructor;

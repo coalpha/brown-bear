@@ -1,3 +1,5 @@
-export default interface CommandFn {
+interface CommandFn {
    (inp: string[]): string; 
 }
+
+export = CommandFn;

@@ -1,4 +1,4 @@
-import CommandFn from "../CommandFn";
+import CommandFn = require("../CommandFn");
 
 const serious: CommandFn = text => [...text].join(" ");
 

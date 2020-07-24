@@ -15,10 +15,14 @@
    },
    "devDependencies": {
       "@coalpha/eslint-config": "^1.0.3",
+      "@rollup/plugin-typescript": "^5.0.2",
       "@types/readline-sync": "^1.4.3",
+      "@types/runes": "^0.4.1",
       "@types/wink-pos-tagger": "^2.2.1",
       "eslint": "^7.5.0",
+      "open": "^7.0.4",
       "patch-package": "^6.2.2",
-      "open": "^7.0.4"
+      "rollup": "^2.23.0",
+      "typescript": "^3.9.7"
    }
 }

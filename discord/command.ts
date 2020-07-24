@@ -1,6 +1,12 @@
-import CommandFn from "./CommandFn";
+import CommandFn = require("./CommandFn");
 
 const commandList: { [command: string]: CommandFn } = Object.create(null);
+
+import serious = require("./commands/serious");
+import zalgo = require("./commands/zalgo");
+
+commandList.serious = serious;
+commandList.zalgo = zalgo;
 
 const commandPrefix = '!';
 
@@ -23,15 +29,17 @@ function parseLine(line: string): Line | null {
 }
 
 export = function runCommand(line: string): string | null {
-   const pLine = parseLine(line);
-   if (pLine === null) {
+   console.log(`runCommand(${line})`);
+   const pline = parseLine(line);
+   if (pline === null) {
       return null;
    }
+   console.log(`pline.name = ${pline.name}`);
 
-   const commandToRun = commandList[pLine.name];
+   const commandToRun = commandList[pline.name];
+   console.log(`commandToRun = ${commandToRun}`);
    if (commandToRun === undefined) {
       return null;
    }
-
-   return commandToRun(pLine.args);
+   return commandToRun(pline.args);
 }

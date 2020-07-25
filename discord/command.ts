@@ -29,15 +29,12 @@ function parseLine(line: string): Line | null {
 }
 
 export = function runCommand(line: string): string | null {
-   console.log(`runCommand(${line})`);
    const pline = parseLine(line);
    if (pline === null) {
       return null;
    }
-   console.log(`pline.name = ${pline.name}`);
 
    const commandToRun = commandList[pline.name];
-   console.log(`commandToRun = ${commandToRun}`);
    if (commandToRun === undefined) {
       return null;
    }

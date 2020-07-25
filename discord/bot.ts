@@ -19,7 +19,7 @@ const messageCauseEffect: { [causeId: string]: Message } = {};
 
 const fiveSeconds = 5 * 1000;
 
-async function newHandleMessage(msg: Message) {
+bot.on("messageCreate", async msg => {
    if (messageIsFromSelf(msg)) {
       return;
    }
@@ -34,9 +34,7 @@ async function newHandleMessage(msg: Message) {
    setTimeout(() => {
       delete messageCauseEffect[msg.id];
    }, fiveSeconds);
-}
-
-bot.on("messageCreate", newHandleMessage);
+});
 
 bot.on("messageUpdate", msg => {
    if (messageIsFromSelf(msg)) {

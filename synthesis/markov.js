@@ -10,7 +10,7 @@ class Markov {
       let last = Markov.start;
       for (let i = 0; i < words.length; i++) {
          const current = words[i];
-         const ctable = this.table[last] = this.table[last] || Object.create;
+         const ctable = this.table[last] = this.table[last] || Object.create(null);
          ctable[current] = (ctable[current]|0) + 1;
          last = current;
       }

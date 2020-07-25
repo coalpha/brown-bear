@@ -8,6 +8,7 @@
       "bufferutil": "^4.0.1",
       "eris": "^0.13.3",
       "erlpack": "github:abalabahaha/erlpack",
+      "js-yaml": "^3.14.0",
       "readline-sync": "^1.4.10",
       "runes": "^0.4.3",
       "wink-pos-tagger": "^2.2.2",
@@ -16,13 +17,16 @@
    "devDependencies": {
       "@coalpha/eslint-config": "^1.0.3",
       "@rollup/plugin-typescript": "^5.0.2",
+      "@types/js-yaml": "^3.12.5",
       "@types/readline-sync": "^1.4.3",
+      "@types/rollup": "^0.54.0",
       "@types/runes": "^0.4.1",
       "@types/wink-pos-tagger": "^2.2.1",
       "eslint": "^7.5.0",
       "open": "^7.0.4",
       "patch-package": "^6.2.2",
       "rollup": "^2.23.0",
+      "tslib": "^2.0.0",
       "typescript": "^3.9.7"
    }
 }

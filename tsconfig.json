@@ -17,14 +17,10 @@
       "outDir": "dist"
    },
 
-   "include": [
-      "discord",
-      "helpers",
-      "synthesis",
-      "zalgo",
-   ],
+   "include": ["*/**.ts"],
 
    "exclude": [
+      "dist",
       "node_modules",
    ]
 }

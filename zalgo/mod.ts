@@ -3,12 +3,12 @@ import chars = require("./chars");
 
 const intensityMap = {
    mini: 1,
-   normal: 3,
-   maxi: 4,
+   normal: 2,
+   maxi: 3,
+   ultra: 4,
 };
 
-/** 1, 3, and 4, respectively. */
-type Intensity = "mini" | "normal" | "maxi";
+type Intensity = keyof typeof intensityMap;
 
 interface Options {
    intensity: Intensity;

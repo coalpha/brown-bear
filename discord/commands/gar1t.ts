@@ -1,4 +1,4 @@
-import CommandFn = require("../CommandFn");
+import CommandFn from "../CommandFn";
 // import  
 
 // const brown_bear: CommandFn = () => 

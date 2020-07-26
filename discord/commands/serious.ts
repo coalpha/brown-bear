@@ -1,5 +1,5 @@
-import CommandFn = require("../CommandFn");
+import CommandFn from "../CommandFn";
 
 const serious: CommandFn = text => [...text.join(" ")].join(" ");
 
-export = serious;
+export default serious;

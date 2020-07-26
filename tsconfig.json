@@ -8,13 +8,14 @@
          "ES2018",
          "ES2019",
          "ES2020",
-         "DOM",
       ],
-      "module": "CommonJS",
-      "target": "ES2018",
+      "target": "ES2020",
       "moduleResolution": "Node",
+      "module": "es6", // I wanted to emit commonjs but rollup doesn't like it
       "newLine": "lf",
-      "outDir": "dist"
+      "allowJs": false,
+      "allowSyntheticDefaultImports": true, // man I really didn't want to use this
+      "downlevelIteration": true, // I like iterating on strings
    },
 
    "include": ["*/**.ts"],

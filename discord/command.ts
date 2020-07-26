@@ -1,9 +1,9 @@
-import CommandFn = require("./CommandFn");
+import CommandFn from "./CommandFn";
 
 const commandList: { [command: string]: CommandFn } = Object.create(null);
 
-import serious = require("./commands/serious");
-import zalgo = require("./commands/zalgo");
+import serious from "./commands/serious";
+import zalgo from "./commands/zalgo";
 
 commandList.serious = serious;
 commandList.zalgo = zalgo;
@@ -28,7 +28,7 @@ function parseLine(line: string): Line | null {
    return { name, args };
 }
 
-export = function runCommand(line: string): string | null {
+export default function runCommand(line: string): string | null {
    const pline = parseLine(line);
    if (pline === null) {
       return null;

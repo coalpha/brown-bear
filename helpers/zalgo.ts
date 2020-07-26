@@ -1,7 +1,7 @@
-import rl = require("readline-sync");
-import zalgo = require("../zalgo/mod");
+import { promptLoop } from "readline-sync";
+import { add } from "../zalgo";
 
-rl.promptLoop(inp => {
-   console.log(zalgo.add(inp));
+promptLoop(inp => {
+   console.log(add(inp));
    return false;
 });

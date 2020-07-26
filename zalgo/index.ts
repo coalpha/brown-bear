@@ -1,5 +1,5 @@
-import runes = require("runes");
-import chars = require("./chars");
+import runes from "runes";
+import * as chars from "./chars";
 
 const intensityMap = {
    mini: 1,
@@ -35,7 +35,7 @@ function addRandomChars(charset: string[], amount: number) {
    };
 }
 
-function add(str: string, options?: Options): string {
+export function add(str: string, options?: Options): string {
    const o = Object.assign({}, defaultOptions, options);
 
    const charset = [];
@@ -55,11 +55,6 @@ function add(str: string, options?: Options): string {
 
 const allZalgo = new RegExp(`[${chars.all.join("")}]`, "g");
 
-function remove(str: string) {
+export function remove(str: string) {
    return str.replace(allZalgo, "");
 }
-
-export = {
-   add,
-   remove,
-};

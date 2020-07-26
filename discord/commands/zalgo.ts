@@ -1,6 +1,6 @@
-import CommandFn = require("../CommandFn");
-import zalgo = require("../../zalgo/mod");
+import CommandFn from "../CommandFn";
+import { add } from "../../zalgo";
 
-const zalgo_add: CommandFn = inp => zalgo.add(inp.join(" "));
+const zalgo: CommandFn = inp => add(inp.join(" "));
 
-export = zalgo_add;
+export default zalgo;

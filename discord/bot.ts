@@ -1,6 +1,6 @@
-import Eris = require("eris");
-import config = require("./config");
-import runCommand = require("./command");
+import Eris from "eris";
+import config from "./config";
+import runCommand from "./command";
 
 type Message = Eris.Message;
 

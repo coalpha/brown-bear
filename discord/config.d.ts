@@ -8,4 +8,4 @@ interface config {
 }
 
 declare const config: config;
-export = config;
+export default config;

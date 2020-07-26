@@ -1,10 +1,12 @@
 {
    "name": "brown-bear",
    "scripts": {
+      "start": "rollup -cw",
+      "build": "rollup -c",
+      "bot": "node dist/discord/bot",
       "postinstall": "patch-package"
    },
    "dependencies": {
-      "@types/node": "^14.0.23",
       "bufferutil": "^4.0.1",
       "eris": "^0.13.3",
       "erlpack": "github:abalabahaha/erlpack",
@@ -12,21 +14,23 @@
       "readline-sync": "^1.4.10",
       "runes": "^0.4.3",
       "wink-pos-tagger": "^2.2.2",
-      "zlib-sync": "^0.1.7"
+      "zlib-sync": "^0.1.7",
+      "open": "^7.0.4"
    },
    "devDependencies": {
       "@coalpha/eslint-config": "^1.0.3",
+      "@rollup/plugin-node-resolve": "^8.4.0",
       "@rollup/plugin-typescript": "^5.0.2",
       "@types/js-yaml": "^3.12.5",
+      "@types/node": "^14.0.23",
       "@types/readline-sync": "^1.4.3",
       "@types/rollup": "^0.54.0",
       "@types/runes": "^0.4.1",
       "@types/wink-pos-tagger": "^2.2.1",
       "eslint": "^7.5.0",
-      "open": "^7.0.4",
       "patch-package": "^6.2.2",
-      "rollup": "^2.23.0",
-      "tslib": "^2.0.0",
+      "rollup": "^2.3.3",
+      "rollup-plugin-typescript2": "^0.27.1",
       "typescript": "^3.9.7"
    }
 }

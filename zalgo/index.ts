@@ -28,7 +28,7 @@ function addRandomChars(charset: string[], amount: number) {
    const len = charset.length;
    return (rune: string) => {
       let i = amount;
-      while (i --> 0) {
+      while (i-- > 0) {
          rune += charset[Math.random() * len | 0];
       }
       return rune;
@@ -36,7 +36,7 @@ function addRandomChars(charset: string[], amount: number) {
 }
 
 export function add(str: string, options?: Options): string {
-   const o = Object.assign({}, defaultOptions, options);
+   const o = { ...defaultOptions, ...options };
 
    const charset = [];
    if (o.up) {

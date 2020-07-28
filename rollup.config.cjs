@@ -1,24 +1,30 @@
 const typescript = require("rollup-plugin-typescript2");
 
-const helpers = {
-   input: ["helpers/pos.ts", "helpers/zalgo.ts"],
-   output: {
-      dir: "dist/helpers",
-      format: "cjs",
-   },
-   plugins: [typescript()],
-};
+function asInputEntry(str) {
+   return [str, `${str}.ts`];
+}
 
-const discord = {
-   input: "discord/bot.ts",
-   output: {
-      dir: "dist/discord",
-      format: "cjs",
-   },
-   plugins: [typescript()],
-};
-
-module.exports = [
-   discord,
-   helpers,
+const inputs = [
+   "discord/index",
+   "helpers/pos",
+   "helpers/zalgo",
+   "synthesis/posf",
 ];
+
+module.exports = {
+   input: Object.fromEntries(inputs.map(asInputEntry)),
+
+   output: {
+      dir: "dist",
+      format: "cjs",
+   },
+
+   plugins: [typescript()],
+
+   external: [
+      "eris",
+      "readline-sync",
+      "runes",
+      "wink-pos-tagger",
+   ],
+};

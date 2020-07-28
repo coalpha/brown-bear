@@ -1,6 +1,6 @@
-import partsOfSpeech = require("./partsOfSpeech");
-import posTagger = require("wink-pos-tagger");
-import cut = require("../util/cut");
+import partsOfSpeech from "./pos/partsOfSpeech";
+import posTagger from "wink-pos-tagger";
+import { cutD } from "../util/cut";
 
 type DictStore = { [word: string]: partsOfSpeech.type };
 

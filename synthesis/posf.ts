@@ -18,6 +18,8 @@ function parseWords(wordsSeparatedByCommas: string): string[] {
    return out;
 }
 
+function 
+
 export default function parseEntry(line: string) {
    const chars = line.split("");
 

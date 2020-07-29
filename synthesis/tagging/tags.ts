@@ -142,9 +142,28 @@ export type Quote = '"';
 export type ParenLeft = "(";
 
 export type ParenRight = ")";
-export type All = (
+
+export type AnyTag = (
    "CC" | "CD" | "DT" | "EX" | "FW" | "IN" | "JJ" | "JJR" | "JJS" | "LS" |
    "MD" | "NN" | "NNP" | "NNPS" | "NNS" | "POS" | "PDT" | "PRP$" | "PRP" | "RB" |
    "RBR" | "RBS" | "RP" | "SYM" | "TO" | "UH" | "VB" | "VBD" | "VBG" | "VBN" | "VBP" |
-   "VBZ" | "WDT" | "WP" | "WP$" | "WRB" | " | " | "." | ":" | "$" | "#" | "\"" | "(" | ")"
+   "VBZ" | "WDT" | "WP" | "WP$" | "WRB" | "," | "." | ":" | "$" | "#" | "\"" | "(" | ")"
 );
+
+export const anyTag: AnyTag[] = [
+   "CC", "CD", "DT", "EX", "FW", "IN", "JJ", "JJR", "JJS", "LS",
+   "MD", "NN", "NNP", "NNPS", "NNS", "POS", "PDT", "PRP$", "PRP", "RB",
+   "RBR", "RBS", "RP", "SYM", "TO", "UH", "VB", "VBD", "VBG", "VBN", "VBP",
+   "VBZ", "WDT", "WP", "WP$", "WRB", ",", ".", ":", "$", "#", "\"", "(", ")",
+];
+
+export function isTag(s: string): boolean {
+   return (anyTag as string[]).includes(s);
+}
+
+export function asTag(s: string): AnyTag {
+   if (isTag(s)) {
+      return s as AnyTag;
+   }
+   throw new TypeError(`${s} is not a member of ${anyTag.join(", ")}!`);
+}

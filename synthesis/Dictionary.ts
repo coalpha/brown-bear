@@ -1,4 +1,4 @@
-import partsOfSpeech from "./pos/partsOfSpeech";
+import partsOfSpeech from "./tagging/partsOfSpeech";
 import posTagger from "wink-pos-tagger";
 import { cutD } from "../util/cut";
 

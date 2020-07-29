@@ -1,1 +1,0 @@
-type Entry = [string, ];

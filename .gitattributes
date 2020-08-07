@@ -1,3 +1,4 @@
 *.yml linguist-detectable
 *.yaml linguist-detectable
+*.json linguist-detectable
 /discord/*.js linguist-generated

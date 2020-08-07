@@ -1,3 +1,3 @@
 export default interface ITagger {
-   tagWords(words: string[]): 
+   tagWords(words: string[]): 2
 }

@@ -14,11 +14,12 @@
       "module": "es6", // I wanted to emit commonjs but rollup doesn't like it
       "newLine": "lf",
       "allowJs": false,
+      "noEmit": false,
       "allowSyntheticDefaultImports": true, // man I really didn't want to use this
       "downlevelIteration": true, // I like iterating on strings
    },
 
-   "include": ["*/**.ts"],
+   "include": ["*/**.ts", "util/file.js", "discord/auth.js"],
 
    "exclude": [
       "dist",

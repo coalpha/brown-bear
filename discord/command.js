@@ -1,7 +1,12 @@
 const serious = require("./commands/serious");
 const zalgo = require("./commands/zalgo");
+const gar1t = require("./commands/gar1t");
 
-const commandList = {};
+const commandList = {
+   serious,
+   zalgo,
+   gar1t,
+};
 
 const commandPrefix = "!";
 

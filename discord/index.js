@@ -2,8 +2,6 @@ const Eris = require("eris");
 const config = require("./config");
 const runCommand = require("./command");
 
-type Message = Eris.Message;
-
 const bot = Eris(config.bot.token);
 
 bot.on("ready", () => {
@@ -11,11 +9,11 @@ bot.on("ready", () => {
    bot.editStatus("online", { name: "your server messages", type: 3 });
 });
 
-function messageIsFromSelf(msg: Message) {
+function messageIsFromSelf(msg) {
    return msg.author.id === config.client.id;
 }
 
-const messageCauseEffect: { [causeId: string]: Message } = {};
+const messageCauseEffect = {};
 
 const fiveSeconds = 5 * 1000;
 

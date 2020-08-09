@@ -28,7 +28,7 @@ for (const inFilename of inFiles) {
       continue;
    }
 
-   for (const sentence of video.sentences) {
+   video.sentences = video.sentences.map(sentence => {
       if (sentence.beige) {
          return ["beige", `${sentence.beige}`];
       }
@@ -39,9 +39,9 @@ for (const inFilename of inFiles) {
       }
 
       throw new TypeError('Sentence should either have a property "beige" or a property "brown"');
-   }
+   });
 
-   const json = JSON.stringify(video);
+   const json = JSON.stringify(video, null, 3);
 
    const outfile = `out/${inFilename.replace(/\.yml$/, ".json")}`;
    fs.writeFileSync(outfile, json);

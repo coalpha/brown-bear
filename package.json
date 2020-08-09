@@ -2,7 +2,7 @@
    "name": "brown-bear",
    "scripts": {
       "clean": "rd /s /q dist",
-      "bot": "node dist/discord",
+      "bot": "node discord",
       "pos": "node dist/helpers/pos",
       "pre:gar1t": "node data/gar1t/process",
       "postinstall": "patch-package"

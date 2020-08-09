@@ -3,50 +3,113 @@ if (module.parent) {
 }
 
 const fs = require("fs");
-const yaml = require("js-yaml");
+const dbdriver = require("better-sqlite3");
+const dbfilename = require("./dbfilename");
 
 process.chdir(__dirname); // relative to this script file instead of the shell
 
 const inFiles = fs.readdirSync("in");
 
-const brownBearLines = [];
+if (fs.existsSync(dbfilename)) {
+   fs.unlinkSync(dbfilename);
+}
+const db = dbdriver(dbfilename);
 
+db.exec(`
+   create table videos (
+      video_id integer primary key,
+      title text
+   ) without rowid;
+
+   create table tags (
+      video_id integer not null,
+
+      tag text not null,
+
+      primary key (video_id, tag),
+      foreign key (video_id) references videos(video_id)
+   );
+
+   create table sentences (
+      video_id integer not null,
+
+      line_number integer not null,
+      character text not null,
+      sentence text not null,
+
+      primary key (video_id, line_number),
+      foreign key (video_id) references videos(video_id)
+   ) without rowid;
+`);
+
+const db_begin = db.prepare("begin transaction");
+const db_rollback = db.prepare("rollback transaction");
+const db_commit = db.prepare("commit transaction");
+
+const db_video = db.prepare(`
+   insert into videos (video_id, title)
+   values (:video_id, :title);
+`);
+
+const db_tag = db.prepare(`
+   insert into tags (video_id, tag)
+   values (:video_id, :tag);
+`);
+
+const db_sentence = db.prepare(`
+   insert into sentences (video_id, line_number, character, sentence)
+   values (:video_id, :line_number, :character, :sentence);
+`);
+
+let video_id = 0;
 for (const inFilename of inFiles) {
-   console.log(inFilename);
-   if (!inFilename.endsWith(".yml")) {
-      console.log(`Skipping ${inFilename}`);
+   if (inFilename.endsWith(".json")) {
+      console.log(`read ${inFilename}`);
+   } else {
+      console.log(`skip ${inFilename}`);
       continue;
    }
 
-   console.log(`Reading ${inFilename}`);
    const relativePath = `in/${inFilename}`;
    const rawdata = fs.readFileSync(relativePath);
-   const video = yaml.load(rawdata);
+   const video = JSON.parse(rawdata);
 
    if (video.disabled) {
-      console.log(`Was disabled ${inFilename}`);
+      console.log(`dsbl ${inFilename}`);
       continue;
+   } else {
+      console.log(`good ${inFilename}`);
    }
 
-   video.sentences = video.sentences.map(sentence => {
-      if (sentence.beige) {
-         return ["beige", `${sentence.beige}`];
-      }
+   db_begin.run();
 
-      if (sentence.brown) {
-         brownBearLines.push(sentence.brown);
-         return ["brown", `${sentence.brown}`];
-      }
-
-      throw new TypeError('Sentence should either have a property "beige" or a property "brown"');
+   db_video.run({
+      video_id,
+      title: video.title,
    });
 
-   const json = JSON.stringify(video, null, 3);
+   for (const tag of video.tags) {
+      console.log(`   atag ${tag.slice(0, 10)}...`);
+      db_tag.run({
+         video_id,
+         tag,
+      });
+   }
 
-   const outfile = `out/${inFilename.replace(/\.yml$/, ".json")}`;
-   fs.writeFileSync(outfile, json);
-   console.info(`Wrote ${outfile}`);
+   console.log("   --- -------------");
+   for (const [line_number, [character, sentence]] of video.sentences.entries()) {
+      console.log(`   sntc ${sentence.slice(0, 10)}...`);
+      db_sentence.run({
+         video_id,
+         line_number,
+         character,
+         sentence,
+      });
+   }
+
+   db_commit.run();
+   video_id++;
 }
 
-const brownBearOutfile = "out/brownBearLines.json";
-fs.writeFileSync(brownBearOutfile, JSON.stringify(brownBearLines, null, 3));
+db.close();
+console.log("done");

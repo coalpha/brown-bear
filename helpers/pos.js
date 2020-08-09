@@ -1,4 +1,4 @@
-const * as rl = require("readline-sync");
+const rl = require("readline-sync");
 const posTagger = require("wink-pos-tagger");
 
 const tagger = posTagger();

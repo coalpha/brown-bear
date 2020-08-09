@@ -8,7 +8,9 @@ const dbfilename = require("./dbfilename");
 
 process.chdir(__dirname); // relative to this script file instead of the shell
 
-const inFiles = fs.readdirSync("in");
+const sourceFiles = "source";
+
+const inFiles = fs.readdirSync(sourceFiles);
 
 if (fs.existsSync(dbfilename)) {
    fs.unlinkSync(dbfilename);
@@ -70,7 +72,7 @@ for (const inFilename of inFiles) {
       continue;
    }
 
-   const relativePath = `in/${inFilename}`;
+   const relativePath = `${sourceFiles}/${inFilename}`;
    const rawdata = fs.readFileSync(relativePath);
    const video = JSON.parse(rawdata);
 

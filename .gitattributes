@@ -1,4 +1,4 @@
 *.yml linguist-detectable
 *.yaml linguist-detectable
-*.json linguist-detectable
 *.d.ts -linguist-vendored linguist-language=TypeScript
+/data/*.json linguist-detectable

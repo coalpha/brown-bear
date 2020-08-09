@@ -1,10 +1,10 @@
 const fs = require("fs");
-const { randAry } = require("../../util/rand");
+const { randBrownBear } = require("../../data/gar1t");
 
-const gar1tdir = `${__dirname}/../../data/gar1t/out`;
-
-const brownBearLines = JSON.parse(
-   fs.readFileSync(`${gar1tdir}/brownBearLines.json`, "utf8"),
-);
-
-module.exports = () => randAry(brownBearLines);
+module.exports = strCount => {
+   const count = strCount|0;
+   if (count < 1 || count > 5) {
+      return `${count} is not webscale.`;
+   }
+   return randBrownBear(count).join("\n");
+};

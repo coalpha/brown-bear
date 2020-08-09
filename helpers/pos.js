@@ -1,8 +1,14 @@
-const rl = require("readline-sync");
+console.log("wink-pos-tagger");
+const start = new Date();
+
 const posTagger = require("wink-pos-tagger");
+const { promptLoop } = require("readline-sync");
 
 const tagger = posTagger();
-rl.promptLoop(inp => {
+
+console.log(`Load time: ${(new Date() - start)}ms`);
+
+promptLoop(inp => {
    const tokens = tagger.tagSentence(inp);
    console.log(tokens.map(token => `${token.normal}::${token.pos}`).join(" "));
    console.log();

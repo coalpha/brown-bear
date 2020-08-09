@@ -1,6 +1,6 @@
-import open from "open";
+const open = require("open");
 
-import config from "./config";
+const config = require("./config");
 
 const client_id = config.client.id;
 

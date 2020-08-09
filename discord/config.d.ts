@@ -1,4 +1,4 @@
-interface config {
+interface Config {
    client: {
       id: string,
    },
@@ -7,5 +7,6 @@ interface config {
    },
 }
 
-declare const config: config;
-export default config;
+declare const config: Config;
+
+export = config;

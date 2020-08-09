@@ -1,5 +1,5 @@
-import * as rl from "readline-sync";
-import posTagger from "wink-pos-tagger";
+const * as rl = require("readline-sync");
+const posTagger = require("wink-pos-tagger");
 
 const tagger = posTagger();
 rl.promptLoop(inp => {

@@ -1,4 +1,4 @@
 *.yml linguist-detectable
 *.yaml linguist-detectable
 *.json linguist-detectable
-/discord/*.js linguist-generated
+*.d.ts -linguist-vendored linguist-language=TypeScript

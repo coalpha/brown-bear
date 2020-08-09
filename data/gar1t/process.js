@@ -3,26 +3,16 @@ if (module.parent) {
 }
 
 const fs = require("fs");
-const path = require("path");
 const yaml = require("js-yaml");
 
 process.chdir(__dirname); // relative to this script file instead of the shell
 
-function inSentenceToOutSentence(sentence) {
-   if (sentence.beige) {
-      return ["beige", `${sentence.beige}`];
-   }
-
-   if (sentence.brown) {
-      return ["brown", `${sentence.brown}`];
-   }
-
-   throw new TypeError('Sentence should either have a property "beige" or a property "brown"');
-}
-
 const inFiles = fs.readdirSync("in");
 
+const brownBearLines = [];
+
 for (const inFilename of inFiles) {
+   console.log(inFilename);
    if (!inFilename.endsWith(".yml")) {
       console.log(`Skipping ${inFilename}`);
       continue;
@@ -38,7 +28,18 @@ for (const inFilename of inFiles) {
       continue;
    }
 
-   video.sentences = video.sentences.map(inSentenceToOutSentence);
+   for (const sentence of video.sentences) {
+      if (sentence.beige) {
+         return ["beige", `${sentence.beige}`];
+      }
+
+      if (sentence.brown) {
+         brownBearLines.push(sentence.brown);
+         return ["brown", `${sentence.brown}`];
+      }
+
+      throw new TypeError('Sentence should either have a property "beige" or a property "brown"');
+   }
 
    const json = JSON.stringify(video);
 
@@ -46,3 +47,6 @@ for (const inFilename of inFiles) {
    fs.writeFileSync(outfile, json);
    console.info(`Wrote ${outfile}`);
 }
+
+const brownBearOutfile = "out/brownBearLines.json";
+fs.writeFileSync(brownBearOutfile, JSON.stringify(brownBearLines, null, 3));

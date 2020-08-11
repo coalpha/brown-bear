@@ -15,3 +15,7 @@ support,NN
 resistance,NN
 technicals,NNS
 fundamentals,NNS
+FDs,NNS
+$ROPE CALLS,NNS
+ROPE CALLS,NNS
+Far OTM Options,NNS

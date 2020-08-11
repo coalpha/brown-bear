@@ -3,7 +3,7 @@ const dbdriver = require("better-sqlite3");
 const parse = require("csv-parse/lib/sync");
 const capitalize = require("capitalize");
 const dbfilename = require("./dbfilename");
-const tagOneToken = require("../tag/oneToken");
+const tagOneToken = require("../tagger/oneToken");
 const { cachedDataVersionTag } = require("v8");
 
 process.chdir(__dirname);
@@ -79,8 +79,8 @@ function addToken(string, token_type, tag) {
 
    if (tag === "NNP") {
       const cpstring = capitalize.words(lcstring);
-      db_token.run(cpstring, token_type);
-      db_tag.run(cpstring, token_type);
+      db_token.run(cpstring, tag);
+      db_tag.run(cpstring, tag);
    }
 }
 

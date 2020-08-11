@@ -52,4 +52,4 @@ for (const [string, token_type] of allTokens) {
    });
 }
 
-fs.writeFileSync("tree.json", JSON.stringify(tree, null, 3));
+fs.writeFileSync("tree.json", JSON.stringify(tree/*, null, 3*/));

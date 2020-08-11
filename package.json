@@ -12,7 +12,6 @@
       "eris": "^0.13.3",
       "erlpack": "github:abalabahaha/erlpack",
       "js-yaml": "^3.14.0",
-      "natural": "^2.1.5",
       "open": "^7.0.4",
       "readline-sync": "^1.4.10",
       "runes": "^0.4.3",

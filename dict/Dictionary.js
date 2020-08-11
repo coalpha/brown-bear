@@ -1,6 +1,6 @@
 const dbdriver = require("better-sqlite3");
 
-class Dictionary {
+class DBDictionary {
    constructor(outfile) {
       this.db = new dbdriver(outfile);
 

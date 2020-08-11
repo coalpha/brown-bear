@@ -1,0 +1,280 @@
+{
+   "tokens": [
+      {
+         "string": "student engagement",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "common core",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "PACER Fitness Test",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "differentiated instruction",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "digital literacy",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "flipped classroom",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "guided reading",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "instructional scaffolding",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "multiple intelligences",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "project-based learning",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "project based learning",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "project based learning",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "design thinking",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "design-thinking",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "design thinking",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "crystal clear",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "reeducation",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "lab days",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "lab-days",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "lab days",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "empathize",
+         "tag": "VB",
+         "tokentag": "word"
+      },
+      {
+         "string": "define",
+         "tag": "VB",
+         "tokentag": "word"
+      },
+      {
+         "string": "distinction",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "discover",
+         "tag": "VB",
+         "tokentag": "word"
+      },
+      {
+         "string": "ideate",
+         "tag": "VB",
+         "tokentag": "word"
+      },
+      {
+         "string": "prototype",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "prototype",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "prototype",
+         "tag": "VB",
+         "tokentag": "word"
+      },
+      {
+         "string": "prototypes",
+         "tag": "NNS",
+         "tokentag": "word"
+      },
+      {
+         "string": "flense",
+         "tag": "VB",
+         "tokentag": "word"
+      },
+      {
+         "string": "gamify",
+         "tag": "VB",
+         "tokentag": "word"
+      },
+      {
+         "string": "gamified",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "design project",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "design projects",
+         "tag": "NNS",
+         "tokentag": "word"
+      },
+      {
+         "string": "life long learner",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "life long learners",
+         "tag": "NNS",
+         "tokentag": "word"
+      },
+      {
+         "string": "learning module",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "innovation",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "innovative",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "innovation diploma",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "innovation diplomas",
+         "tag": "NNS",
+         "tokentag": "word"
+      },
+      {
+         "string": "human capital",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "competency based learning",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "competency based",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "juul",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "juuling",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "math xl",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "myspanishlab",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "organ harvesting",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "instructure canvas",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "block schedule",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "educator",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "educators",
+         "tag": "NNS",
+         "tokentag": "word"
+      },
+      {
+         "string": "learner",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "learners",
+         "tag": "NNS",
+         "tokentag": "word"
+      }
+   ],
+   "arrows": []
+}

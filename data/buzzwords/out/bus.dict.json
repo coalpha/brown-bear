@@ -1,0 +1,435 @@
+{
+   "tokens": [
+      {
+         "string": "analytics",
+         "tag": "NNS",
+         "tokentag": "word"
+      },
+      {
+         "string": "astroturfed",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "ballpark figure",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "bandwidth",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "business-to-business",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "business to business",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "B2B",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "business-to-consumer",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "business to consumer",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "B2C",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "best of breed",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "brick-and-mortar",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "brick and mortar",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "business process outsourcing",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "outsourcing",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "cadence",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "client-centric",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "client centric",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "close the loop",
+         "tag": "VB",
+         "tokentag": "word"
+      },
+      {
+         "string": "co-opetition",
+         "tag": "NNP",
+         "tokentag": "word"
+      },
+      {
+         "string": "content marketing",
+         "tag": "NNP",
+         "tokentag": "word"
+      },
+      {
+         "string": "core competency",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "creative",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "customer-centric",
+         "tag": "NNP",
+         "tokentag": "word"
+      },
+      {
+         "string": "customer-centric mindset",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "customer centric mindset",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "downsizing",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "drill down",
+         "tag": "VB",
+         "tokentag": "word"
+      },
+      {
+         "string": "drinking the kool-aid",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "drinking the kool aid",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "early-stage",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "early stage",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "employer branding",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "eating your own dogfood",
+         "tag": "NNP",
+         "tokentag": "word"
+      },
+      {
+         "string": "dogfooding",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "enable",
+         "tag": "VB",
+         "tokentag": "word"
+      },
+      {
+         "string": "entitlement",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "evangelist",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "event horizon",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "eyeballs",
+         "tag": "NNS",
+         "tokentag": "word"
+      },
+      {
+         "string": "free value",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "generation y",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "holistic approach",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "holistic integration",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "hyperlocal",
+         "tag": "NNP",
+         "tokentag": "word"
+      },
+      {
+         "string": "innovation",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "innovative",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "logistics",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "low hanging fruit",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "mindshare",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "mission critical",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "management visibility",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "new economy",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "offshoring",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "opportunities",
+         "tag": "NNS",
+         "tokentag": "word"
+      },
+      {
+         "string": "pain point",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "pain points",
+         "tag": "NNS",
+         "tokentag": "word"
+      },
+      {
+         "string": "paralysis by analysis",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "passionate",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "privacy",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "piracy",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "productivity",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "profit center",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "quick win",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "quick wins",
+         "tag": "NNS",
+         "tokentag": "word"
+      },
+      {
+         "string": "return on investment",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "ROI",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "rightshoring",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "seamless",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "serum",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "share options",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "spy puts",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "spxl calls",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "solution",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "sustainability",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "sustainable",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "storytelling",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "storytelling",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "startup",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "tiger team",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "time-blind",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "time blind",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "touchpoint",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "touchpoints",
+         "tag": "NNS",
+         "tokentag": "word"
+      },
+      {
+         "string": "touch based",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "paradigm",
+         "tag": "NN",
+         "tokentag": "word"
+      }
+   ],
+   "arrows": []
+}

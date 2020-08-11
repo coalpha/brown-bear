@@ -1,0 +1,551 @@
+{
+   "tokens": [
+      {
+         "string": "4g",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "5g",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "ajax",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "algorithm",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "api",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "ai",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "artificial intelligence",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "back-end",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "back end",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "big data",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "bleeding edge",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "blockchain",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "cloud-computing",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "cloud-computing",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "cloud computing",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "cloud computing",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "collaboration",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "content management",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "content management system",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "cms",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "convergence",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "converging",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "cross-platform",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "cross platform",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "css3",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "cyber-physical systems",
+         "tag": "NNS",
+         "tokentag": "word"
+      },
+      {
+         "string": "cyber physical systems",
+         "tag": "NNS",
+         "tokentag": "word"
+      },
+      {
+         "string": "datafication",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "data mining",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "data science",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "deep dive",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "deep learning",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "deep web",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "dark web",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "devops",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "digital remastering",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "digital remastering",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "digital rights management",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "drm",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "digital signage",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "disruptive technologies",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "document management",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "e-learning",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "e learning",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "end-to-end",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "end to end",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "enterprise content management",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "ecm",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "framework",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "frictionless",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "front-end",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "front end",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "fuzzy logic",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "growth hack",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "growth hacking",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "html5",
+         "tag": "CD",
+         "tokentag": "word"
+      },
+      {
+         "string": "ideation management",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "immersion",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "immersive",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "information superhighway",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "information highway",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "internet of things",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "iot",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "javascript",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "lambda",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "machine learning",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "mashup",
+         "tag": "NNP",
+         "tokentag": "word"
+      },
+      {
+         "string": "microservices",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "mobile",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "modularity",
+         "tag": "NNP",
+         "tokentag": "word"
+      },
+      {
+         "string": "nanotechnology",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "nanotech",
+         "tag": "NNP",
+         "tokentag": "word"
+      },
+      {
+         "string": "netiquette",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "next-generation",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "next generation",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "nextgen",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "open-source",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "open source",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "quantum supremacy",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "real-time",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "real time",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "responsive design",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "responsive web design",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "sensorization",
+         "tag": "NNP",
+         "tokentag": "word"
+      },
+      {
+         "string": "saas",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "software as a service",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "scalability",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "webscale",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "web-scale",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "web scale",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "skeuomorphic",
+         "tag": "NNP",
+         "tokentag": "word"
+      },
+      {
+         "string": "single pane-of-glass",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "single pane of glass",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "spam",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "stack",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "systems development life-cycle",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "systems development life cycle",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "tagging",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "transmedia",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "toolchain",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "user generated content",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "viral",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "virtualization",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "web services",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "workflow",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "tim apple",
+         "tag": "NNP",
+         "tokentag": "word"
+      }
+   ],
+   "arrows": [
+      {
+         "string": "_-driven development",
+         "tag_in": "NN",
+         "tag_out": "NN"
+      },
+      {
+         "string": "eco-_",
+         "tag_in": "NN",
+         "tag_out": "NN"
+      },
+      {
+         "string": "_ engines",
+         "tag_in": "JJ",
+         "tag_out": "NNS"
+      }
+   ]
+}

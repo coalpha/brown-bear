@@ -1,3 +1,4 @@
-declare function tokenize(i: string): string[];
+import { Token } from "wink-tokenizer";
 
-export = tokenize;
+export declare function tokenize(i: string): string[];
+export declare function tokenizeRaw(i: string): Token[];

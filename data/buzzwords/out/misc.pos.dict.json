@@ -1,0 +1,70 @@
+{
+   "tokens": [
+      {
+         "string": "refactor",
+         "tag": "N",
+         "tokentag": "word"
+      },
+      {
+         "string": "refactoring",
+         "tag": "VBG",
+         "tokentag": "word"
+      },
+      {
+         "string": "dry principals",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "visual basic",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "rust",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "genericless",
+         "tag": "JJ",
+         "tokentag": "word"
+      },
+      {
+         "string": "react",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "redux",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "vue",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "svelte",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "lisp",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "emacs",
+         "tag": "NN",
+         "tokentag": "word"
+      },
+      {
+         "string": "vim",
+         "tag": "NN",
+         "tokentag": "word"
+      }
+   ],
+   "arrows": []
+}

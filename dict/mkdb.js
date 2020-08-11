@@ -1,8 +1,10 @@
 const fs = require("fs");
 const dbdriver = require("better-sqlite3");
 const parse = require("csv-parse/lib/sync");
+const capitalize = require("capitalize");
 const dbfilename = require("./dbfilename");
 const tagOneToken = require("../tag/oneToken");
+const { cachedDataVersionTag } = require("v8");
 
 process.chdir(__dirname);
 
@@ -59,6 +61,29 @@ const db_commit = db.prepare("commit transaction");
 
 const dups = Object.create(null);
 
+function addToken(string, token_type, tag) {
+   token_type = token_type.toLowerCase();
+   const lcstring = string.toLowerCase();
+   const nhstring = string.replace(/-/g, " ");
+   const lcnhstring = lcstring.replace(/-/g, " ");
+
+   db_token.run(string, token_type);
+   db_token.run(lcstring, token_type);
+   db_token.run(nhstring, token_type);
+   db_token.run(lcnhstring, token_type);
+
+   db_tag.run(string, tag);
+   db_tag.run(lcstring, tag);
+   db_tag.run(nhstring, tag);
+   db_tag.run(lcnhstring, tag);
+
+   if (tag === "NNP") {
+      const cpstring = capitalize.words(lcstring);
+      db_token.run(cpstring, token_type);
+      db_tag.run(cpstring, token_type);
+   }
+}
+
 for (const inFilename of inFiles) {
    let mode;
 
@@ -84,7 +109,7 @@ for (const inFilename of inFiles) {
    db_begin.run();
    if (mode === "tokens") {
       for (const record of records) {
-         const tag = record.tag || tagOneToken(record.string);
+         const tag = record.tag.toUpperCase() || tagOneToken(record.string);
          const token_type = record.token_type || "word";
          const multiplexed = `${record.string},${tag},${token_type}`;
 
@@ -95,8 +120,7 @@ for (const inFilename of inFiles) {
             dups[multiplexed] = inFilename;
          }
 
-         db_token.run(record.string, token_type);
-         db_tag.run(record.string, tag);
+         addToken(record.string, token_type, tag);
       }
    } else {
       for (const record of records) {

@@ -2,12 +2,12 @@
 // anything that wants to tokenize uses the same Config
 
 const TokenizerFactory = require("wink-tokenizer");
+const gluewalker = require("./gluewalker");
 
 const tokenizer = new TokenizerFactory();
 
 module.exports = {
-   tokenize(s) {
-      return tokenizer.tokenize(s).map(t => t.value);
-   },
-   tokenizeRaw: tokenizer.tokenize.bind(tokenizer),
+   stokenize(s) { return tokenizer.tokenize(s).map(token => token.value) },
+   gtokenize(s) { return gluewalker(tokenizer.tokenize(s)) },
+   gstokenize(s) { return gluewalker(tokenizer.tokenize(s)).map(token => token.value) },
 };

@@ -4,19 +4,15 @@ astroturfed,JJ
 ballpark figure,NN
 bandwidth,NN
 business-to-business,JJ
-business to business,JJ
 B2B,JJ
 business-to-consumer,JJ
-business to consumer,JJ
 B2C,JJ
 best of breed,JJ
 brick-and-mortar,JJ
-brick and mortar,JJ
 business process outsourcing,VBG
 outsourcing,VBG
 cadence,NN
 client-centric,JJ
-client centric,JJ
 close the loop,VB
 co-opetition,NNP
 content marketing,NNP
@@ -24,13 +20,10 @@ core competency,JJ
 creative,JJ
 customer-centric,NNP
 customer-centric mindset,NN
-customer centric mindset,NN
 downsizing,VBG
 drill down,VB
 drinking the kool-aid,VBG
-drinking the kool aid,VBG
 early-stage,JJ
-early stage,JJ
 employer branding,NN
 eating your own dogfood,NNP
 dogfooding,VBG
@@ -70,9 +63,8 @@ rightshoring,VBG
 seamless,JJ
 serum,NN
 share options,NN
-spy puts,NN
-spxl calls,NN
 solution,NN
+solutions,NNS
 sustainability,NN
 sustainable,JJ
 storytelling,NN
@@ -80,7 +72,6 @@ storytelling,VBG
 startup,NN
 tiger team,NN
 time-blind,JJ
-time blind,JJ
 touchpoint,NN
 touchpoints,NNS
 touch based,JJ

@@ -1,0 +1,17 @@
+string,tag,token_type
+PUTS,NNS
+CALLS,NNS
+bullish,JJ
+bearish,JJ
+perma bull,NN
+perma bear,NN
+$SPY PUTS,NNS
+SPY PUTS,NNS
+$TSLA PUTS,NNS
+TSLA PUTS,NNS
+$SPXL CALLS,NNS
+SPXL CALLS,NNS
+support,NN
+resistance,NN
+technicals,NNS
+fundamentals,NNS

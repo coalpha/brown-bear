@@ -1,8 +1,8 @@
-const { tokenize, tokenizeRaw } = require("../tokenizer");
+const { gstokenize } = require("../tokenizer");
 const tokenToString = require("./tokenToString");
 const { promptLoop } = require("readline-sync");
 
 promptLoop(inp => {
-   console.log(tokenizeRaw(inp).map(tokenToString).join(", "));
+   console.log(gstokenize(inp).map(s => `[${s}]`).join(" "));
    return false;
 });

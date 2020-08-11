@@ -7,14 +7,11 @@ api,NN
 ai,NN
 artificial intelligence,NN
 back-end,NN
-back end,NN
 big data,NN
 bleeding edge,JJ
 blockchain,NN
 cloud-computing,NN
 cloud-computing,VBG
-cloud computing,NN
-cloud computing,VBG
 collaboration,NN
 content management,NN
 content management system,NN
@@ -22,10 +19,8 @@ cms,NN
 convergence,NN
 converging,VBG
 cross-platform,JJ
-cross platform,JJ
 css3,NN
 cyber-physical systems,NNS
-cyber physical systems,NNS
 datafication,NN
 data mining,VBG
 data science,NN
@@ -42,7 +37,6 @@ digital signage,NN
 disruptive technologies,NN
 document management,NN
 e-learning,NN
-e learning,NN
 end-to-end,JJ
 end to end,JJ
 enterprise content management,NN
@@ -73,13 +67,10 @@ nanotechnology,NN
 nanotech,NNP
 netiquette,NN
 next-generation,JJ
-next generation,JJ
 nextgen,JJ
 open-source,JJ
-open source,JJ
 quantum supremacy,NN
 real-time,JJ
-real time,JJ
 responsive design,NN
 responsive web design,NN
 sensorization,NNP
@@ -88,14 +79,11 @@ software as a service,NN
 scalability,NN
 webscale,NN
 web-scale,NN
-web scale,NN
 skeuomorphic,NNP
 single pane-of-glass,JJ
-single pane of glass,JJ
 spam,NN
 stack,NN
 systems development life-cycle,NN
-systems development life cycle,NN
 tagging,VBG
 transmedia,JJ
 toolchain,NN

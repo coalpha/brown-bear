@@ -1,0 +1,14 @@
+string,tag,token_type
+refactor,N
+refactoring,VBG
+dry principals,JJ
+visual basic,NN
+rust,NN
+genericless,JJ
+react,NN
+redux,NN
+vue,NN
+svelte,NN
+lisp,NN
+emacs,NN
+vim,NN

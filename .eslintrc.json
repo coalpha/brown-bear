@@ -6,5 +6,8 @@
    },
    "plugins": [
       "@typescript-eslint"
-   ]
+   ],
+   "rules": {
+      "no-constructor-return": "off"
+   }
 }

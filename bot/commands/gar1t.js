@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { randBrownBear } = require("../../data/gar1t");
+const { randBrownBear } = require("../../gar1t");
 
 module.exports = strCount => {
    const count = strCount|0;

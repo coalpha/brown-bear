@@ -3,7 +3,7 @@ design pattern,NN
 singleton,NN
 factory,NN
 bean,NN
-prototype,NN
+prototypal,JJ
 message passing,NN
 class,NN
 object oriented,JJ

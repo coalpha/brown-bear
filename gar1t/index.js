@@ -3,7 +3,7 @@ const dbfilename = require("./dbfilename");
 
 const db = dbdriver(dbfilename);
 
-const db_rand_brown_bear = db.prepare(`
+const db_rand_brown_bear = db.prepare(/* sql */ `
    select rand.sentence from (
       select character, sentence from sentences
       where character = 'brown'

@@ -1,7 +1,3 @@
-if (module.parent) {
-   throw new Error(`${__filename} is not an importable module!`);
-}
-
 const fs = require("fs");
 const dbdriver = require("better-sqlite3");
 const dbfilename = require("./dbfilename");
@@ -17,7 +13,7 @@ if (fs.existsSync(dbfilename)) {
 }
 const db = dbdriver(dbfilename);
 
-db.exec(`
+db.exec(/* sql */ `
    create table videos (
       video_id integer primary key,
       title text
@@ -48,17 +44,17 @@ const db_begin = db.prepare("begin transaction");
 const db_rollback = db.prepare("rollback transaction");
 const db_commit = db.prepare("commit transaction");
 
-const db_video = db.prepare(`
+const db_video = db.prepare(/* sql */ `
    insert into videos (video_id, title)
    values (:video_id, :title);
 `);
 
-const db_tag = db.prepare(`
+const db_tag = db.prepare(/* sql */ `
    insert into tags (video_id, tag)
    values (:video_id, :tag);
 `);
 
-const db_sentence = db.prepare(`
+const db_sentence = db.prepare(/* sql */ `
    insert into sentences (video_id, line_number, character, sentence)
    values (:video_id, :line_number, :character, :sentence);
 `);

@@ -16,7 +16,9 @@ function messageIsFromSelf(msg) {
 const messageCauseEffect = {};
 
 const oneSecond = 1000;
-const fiveSeconds = oneSecond * 5;
+
+const updateTime = oneSecond * 8;
+const deleteTime = oneSecond * 15;
 
 bot.on("messageCreate", async msg => {
    if (messageIsFromSelf(msg)) {
@@ -32,7 +34,7 @@ bot.on("messageCreate", async msg => {
    messageCauseEffect[msg.id] = sentMsg;
    setTimeout(() => {
       delete messageCauseEffect[msg.id];
-   }, fiveSeconds);
+   }, deleteTime);
 });
 
 bot.on("messageUpdate", msg => {
@@ -49,8 +51,8 @@ bot.on("messageUpdate", msg => {
       return;
    }
 
-   const fiveSecondsLater = msg.timestamp + fiveSeconds; // this may be redundant
-   if (msg.editedTimestamp > fiveSecondsLater) {
+   const updateTimeLater = msg.timestamp + updateTime; // this may be redundant
+   if (msg.editedTimestamp > updateTimeLater) {
       return;
    }
 
@@ -74,8 +76,8 @@ bot.on("messageDelete", msg => {
       return;
    }
 
-   const tenSecondsLater = msg.timestamp + oneSecond * 10;
-   if (deleteTime > tenSecondsLater) {
+   const deleteTimeLater = msg.timestamp + deleteTime;
+   if (deleteTime > deleteTimeLater) {
       return;
    }
 

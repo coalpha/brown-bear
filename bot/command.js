@@ -1,11 +1,13 @@
 const serious = require("./commands/serious");
 const zalgo = require("./commands/zalgo");
 const brownbear = require("./commands/gar1t");
+const buzz = require("./commands/buzz");
 
 const commandList = {
    serious,
    zalgo,
    brownbear,
+   buzz,
 };
 
 const commandPrefix = "!";

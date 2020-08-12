@@ -1,4 +1,3 @@
 const add = require("../../zalgo/add");
 
-/** @type {(inp: string[]) => string} */
-module.exports = (inp => add(inp.join(" ")));
+module.exports = args => add(args.length === 0 ? "HE COMES" : args.join(" "));

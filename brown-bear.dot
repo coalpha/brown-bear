@@ -1,0 +1,106 @@
+digraph brown_bear {
+   compound=true;
+   subgraph cluster_wink {
+      label=wink
+      wink_pos [label="wink-pos-tagger"]
+      wink_tokenizer [label="wink-tokenizer"]
+   }
+
+   subgraph cluster_bot {
+      label=bot
+      bot_auth [label="auth.js" shape=rect]
+      bot_config [label="config.js"]
+      bot_index [label="index.js" shape=rect]
+      bot_command [label="command.js"]
+      subgraph cluster_bot_commands {
+         label="commands"
+         bot_commands_buzz [label="buzz.js"]
+         bot_commands_gar1t [label="gar1t.js"]
+         bot_commands_serious [label="serious.js"]
+         bot_commands_zalgo [label="zalgo.js"]
+      }
+
+      bot_config -> bot_index
+      bot_config -> bot_auth
+      bot_commands_gar1t -> bot_command [ltail=cluster_bot_commands]
+      bot_command -> bot_index
+   }
+
+   subgraph cluster_zalgo {
+      label=zalgo
+      zalgo_chars [label="chars.js"]
+      zalgo_add [label="add.js"]
+      zalgo_remove [label="remove.js"]
+
+      zalgo_chars -> zalgo_add
+      zalgo_chars -> zalgo_remove
+   }
+
+   subgraph cluster_dict {
+      label=dict
+      dict_dbfilename [label="dbfilename.js"]
+      dict_db [label="dict.db" shape=Msquare]
+      dict_dup [label="dup.js" shape=rect]
+      dict_index [label="index.js"]
+      dict_mkdb [label="mkdb.js" shape=rect]
+      dict_mktags [label="mktags.js" shape=rect]
+      dict_mktree [label="mktree.js" shape=rect]
+      dict_tagsj [label="tags.json" shape=Msquare]
+      dict_treej [label="tree.json" shape=Msquare]
+      dict_tags [label="tags.js"]
+      dict_tree [label="tree.js"]
+      dict_all_c [label="all.c"]
+      dict_all_exe [label="all.exe" shape=rect]
+      subgraph cluster_dict_source {
+         label=source
+         dict_source_tokens_csv [label="*.tokens.csv", shape=Msquare]
+         dict_source_arrows_csv [label="*.arrows.csv" shape=Msquare]
+      }
+
+      dict_dbfilename -> dict_dup
+      dict_dbfilename -> dict_index
+      dict_dbfilename -> dict_mkdb -> dict_db
+      dict_dbfilename -> dict_mktags -> dict_tagsj -> dict_tags
+      dict_dbfilename -> dict_mktree -> dict_treej -> dict_tree
+      dict_db -> dict_index
+      dict_db -> dict_mktags
+      dict_db -> dict_mktree
+      
+      dict_source_tokens_csv -> dict_mkdb [ltail=cluster_dict_source]
+   }
+
+   subgraph cluster_gar1t {
+      label=gar1t
+      gar1t_dbfilename [label="dbfilename.js"]
+      gar1t_db [label="gar1t.db" shape=Msquare]
+      gar1t_index [label="index.js"]
+      gar1t_mkdb [label="mkdb.js"]
+      subgraph cluster_gar1t_source {
+         gar1t_source_json [label="*.json" shape=Msquare]
+      }
+
+      gar1t_dbfilename -> gar1t_mkdb -> gar1t_db -> gar1t_index
+      gar1t_dbfilename -> gar1t_index
+      gar1t_source_json -> gar1t_mkdb [ltail=cluster_gar1t_source]
+   }
+
+   subgraph cluster_tagger {
+      label=tagger
+      tagger_oneToken [label="oneToken.js"]
+      tagger_index [label="index.js"]
+   }
+
+   subgraph cluster_tokenizer {
+      label=tokenizer
+      tokenizer_gluewalker [label="gluewalker.js"]
+      tokenizer_index [label="index.js"]
+      tokenizer_gluewalker -> tokenizer_index
+   }
+   zalgo_add -> bot_commands_zalgo
+   gar1t_index -> bot_commands_gar1t
+   wink_pos -> tagger_oneToken
+   tagger_oneToken -> dict_mkdb
+   dict_tags -> tagger_index
+   wink_tokenizer -> tokenizer_gluewalker
+   dict_tree -> tokenizer_gluewalker
+}

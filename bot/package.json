@@ -1,0 +1,12 @@
+{
+   "name": "@brown-bear/bot",
+   "version": "1.0.0",
+
+   "dependencies": {
+      "bufferutil": "^4.0.1",
+      "eris": "^0.13.3",
+      "erlpack": "github:abalabahaha/erlpack",
+      "open": "^7.0.4",
+      "zlib-sync": "^0.1.7"
+   }
+}

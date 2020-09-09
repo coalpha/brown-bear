@@ -50,8 +50,6 @@ for (const line of BEN_STEED_CULT.split("\n")) {
       const lastWord = taggedLine[i - 1].value;
       const { value: thisWord, pos: thisTag } = taggedLine[i];
 
-      tmkov
-
       const wordEntries
          = tmkov[lastWord]
          = new WordEntries(tmkov[lastWord], lastWord);
